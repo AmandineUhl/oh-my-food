@@ -1,0 +1,53 @@
+header{
+    @extend %flex_center;
+    .arrow {
+        color:black;
+        text-decoration: none; 
+        position: absolute;
+        left: 10px; 
+    }
+}
+.background{
+    img{
+    width: 100%;
+    height: 275px;
+    }
+}
+
+.menu{
+    position: relative;
+    margin-top: -40px;
+    width: 100%;
+    background-color: $main_color;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+        h2{
+            font-family: $font_footer; 
+        }
+
+        .fa-heart{
+            position: absolute;
+            top:29px;
+            right:15px;
+        }
+
+        h3{
+            font-size: 16px;
+            font-weight: 300;
+            border-bottom: 3px solid #99E2D0;
+            width: 10%;
+            
+        }
+
+        .button {
+            margin-top: 30px;
+           
+           
+        }
+
+}

@@ -1,4 +1,11 @@
-body {
-   font-family: "roboto, sans sherif";
-   margin: 0;
+.main-container {
+    font-family: $main_font;
+    width: 100%;
+    max-width: 768px;
+    box-sizing: border-box;
 }
+
+body{
+    margin:0;
+}
+

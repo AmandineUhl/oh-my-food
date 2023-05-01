@@ -1,8 +1,15 @@
-
 header {
     @extend %flex_center;
-       
+    margin-bottom: 5px;
+    margin-top: 20px;
+
+        img{
+            width: 40%;
+        }
 }
+
+
+
 
 
 

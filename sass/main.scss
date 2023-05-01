@@ -1,10 +1,11 @@
-@import "base/_base.scss";
-@import "layout/_header.scss";
-@import "pages/_home.scss";
-@import "utils/_placeholders.scss";
-@import "utils/_mixins.scss";
-@import "utils/variable";
-
-
-
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/placeholders';
+@import './base/base';
+@import './composants/_buttons';
+@import './composants/card';
+@import './layout/header';
+@import './layout/footer';
+@import './pages/menu';
+@import './pages/home';
 

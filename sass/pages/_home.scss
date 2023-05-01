@@ -1,9 +1,68 @@
-
-
-
-.location{
+.location {
     @extend %flex_center;
-    gap: 17px;
-    font-weight: 500;
-    font-size: 16px;
+    gap: 30px;
+    background-color: $location_color;
+}
+
+.presentation {
+    background-color: $main_color;
+    text-align: center;
+        h2{
+            font-weight: 700;
+            font-size: 24px;
+            margin-left: 42px;
+            margin-right: 58px;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 300;
+        }
+}
+
+.fontionnement {
+
+margin-top: 50px;
+
+    h2{
+        margin-left: 20px;      
+    }
+
+    .index {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        width: 85%;
+        height: 72.38px;
+        background-color: $main_color;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+        
+    }
+    
+    .number{
+        color: white;
+        background-color: $icon_color;
+        border: 1px solid $icon_color;
+        border-radius: 30px;
+        width: 24px;
+        height: 24px;
+        @extend %flex_center;
+        position: absolute;
+        margin-left: -15px;
+    }
+    .logo {
+        color:$icon_color;
+        margin-left: 30px;
+    }
+
+}
+.restaurant{
+    background-color: $presentation_color;
+    padding: 20px;
+    margin-top: 50px;
+        h2{
+            margin-left: 5px;
+        }
+
 }

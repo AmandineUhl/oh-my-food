@@ -1,0 +1,21 @@
+footer {
+    @extend %flex_column;
+    background-color: $footer_color;
+    color: white;
+
+        .enseigne{
+            font-family: $font_footer;
+            font-size: 18px;
+            margin-top: 22px;
+            margin-left: 25px;
+        }
+            li{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                list-style: none;
+                margin-left: -10px;
+
+            }
+        
+}
