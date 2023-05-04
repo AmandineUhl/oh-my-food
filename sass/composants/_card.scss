@@ -1,9 +1,14 @@
-
 .card-main {
     width: 100%;
     border-radius: 15px;
     background-color: white;
     margin-bottom: 20px;
+        
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        
     
         img {
        width: 100%;
@@ -15,10 +20,12 @@
         .card-content{
             display: flex;
             justify-content: space-between;
+                
 
                 h3, p{
                     margin: 5px;
                     padding-left: 13px;
+                    
                 }
 
                 .icon, .icon_pink{

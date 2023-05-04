@@ -1,4 +1,4 @@
-.fontionnement .number, .location, .menu .menu_btn, header, .explored, .button {
+.fontionnement .number, .location, .menu .menu_btn, header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,6 +38,10 @@ body {
   border-radius: 15px;
   background-color: white;
   margin-bottom: 20px;
+}
+.card-main a {
+  text-decoration: none;
+  color: black;
 }
 .card-main img {
   width: 100%;
