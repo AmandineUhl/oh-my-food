@@ -24,10 +24,19 @@ header{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    
 
         h2{
-            font-family: $font_footer; 
+            font-family: $font_footer;
+            margin-left: 13px; 
+            
+        }
+
+        .choise{
+            margin-left: 13px;
+            margin-right: 15px;
+            margin-bottom: 20px;
+       
         }
 
         .fa-heart{
@@ -44,10 +53,17 @@ header{
             
         }
 
+        
+
         .button {
             margin-top: 30px;
            
-           
+        }
+
+        .menu_btn{
+            text-decoration: none;
+            @extend %flex_center;
+
         }
 
 }

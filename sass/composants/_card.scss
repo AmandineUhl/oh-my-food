@@ -41,19 +41,29 @@
     background-color: white;
     border-radius: 15px;
     box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
-    padding: 5px;
+    padding: 4px;
+    gap:5px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    margin-bottom: 10px;
+        .card_content{
+
+        
         h4,p{
             margin:0;    
         }
 
+        .title{
+            display: flex;
+            justify-content:space-between ;
+         }
         .subtitle {
             font-size: 15px;
             font-weight: 300;
             display: flex;
-            justify-content: space-between;    
+            justify-content: space-between;
+            
         }
-
+    }
 }
