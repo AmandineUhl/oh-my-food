@@ -48,8 +48,6 @@ body {
   height: 200px;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .card-main .card-content {
   display: flex;
@@ -58,12 +56,6 @@ body {
 .card-main .card-content h3, .card-main .card-content p {
   margin: 5px;
   padding-left: 13px;
-}
-.card-main .card-content .icon, .card-main .card-content .icon_pink {
-  margin-right: 10px;
-}
-.card-main .card-content .icon_pink {
-  color: #9356dc;
 }
 
 .card_menu {
@@ -78,6 +70,9 @@ body {
   flex-direction: column;
   justify-content: center;
   margin-bottom: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .card_menu .card_content h4, .card_menu .card_content p {
   margin: 0;
@@ -91,6 +86,14 @@ body {
   font-weight: 300;
   display: flex;
   justify-content: space-between;
+}
+.card_menu .card_content .card_validate {
+  background-color: #99e2d0;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 5s;
 }
 
 header {

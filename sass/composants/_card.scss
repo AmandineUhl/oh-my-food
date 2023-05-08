@@ -15,7 +15,7 @@
        height: 200px;
        border-top-right-radius: 15px;
        border-top-left-radius: 15px;
-       object-fit: cover;
+       
         }
         .card-content{
             display: flex;
@@ -26,17 +26,7 @@
                     margin: 5px;
                     padding-left: 13px;
                     
-                }
-
-                .icon, .icon_pink{
-                    margin-right: 10px;
-                }
-
-                .icon_pink{
-                    color: rgba($color: #9356DC, $alpha: 1.0) ;
-                }
-
-                
+                }       
         }
 
         
@@ -54,6 +44,9 @@
     flex-direction: column;
     justify-content: center;
     margin-bottom: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
         .card_content{
 
         
@@ -71,6 +64,14 @@
             display: flex;
             justify-content: space-between;
             
+        }
+        .card_validate{
+            background-color: #99e2d0;
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition-duration: 5s;
         }
     }
 }
