@@ -16,6 +16,10 @@ footer {
   max-width: 768px;
   box-sizing: border-box;
 }
+.main-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 body {
   margin: 0;
@@ -29,15 +33,15 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border: none;
   color: white;
-  font-size: 16px;
-  margin-bottom: 50px;
+  font-size: 1rem;
+  margin-bottom: 3.125rem;
 }
 
 .card-main {
   width: 100%;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
   background-color: white;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .card-main a {
   text-decoration: none;
@@ -46,16 +50,16 @@ body {
 .card-main img {
   width: 100%;
   height: 200px;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
+  border-top-right-radius: 0.9375rem;
+  border-top-left-radius: 0.9375rem;
 }
 .card-main .card-content {
   display: flex;
   justify-content: space-between;
 }
 .card-main .card-content h3, .card-main .card-content p {
-  margin: 5px;
-  padding-left: 13px;
+  margin: 0.3125rem;
+  padding-left: 0.8125rem;
 }
 
 .card_menu {
@@ -97,8 +101,8 @@ body {
 }
 
 header {
-  margin-bottom: 5px;
-  margin-top: 20px;
+  margin-bottom: 0.3125rem;
+  margin-top: 1.25rem;
 }
 header img {
   width: 40%;
@@ -110,23 +114,23 @@ footer {
 }
 footer .enseigne {
   font-family: "shrikhand";
-  font-size: 18px;
-  margin-top: 22px;
-  margin-left: 25px;
+  font-size: 1.125rem;
+  margin-top: 1.375rem;
+  margin-left: 1.5625rem;
 }
 footer li {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.625rem;
   list-style: none;
-  margin-left: -10px;
+  margin-left: -0.625rem;
 }
 
 header .arrow {
   color: black;
   text-decoration: none;
   position: absolute;
-  left: 10px;
+  left: 5%;
 }
 
 .background img {
@@ -136,99 +140,99 @@ header .arrow {
 
 .menu {
   position: relative;
-  margin-top: -40px;
+  margin-top: -25%;
   width: 100%;
   background-color: #F6F6F6;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 .menu h2 {
   font-family: "shrikhand";
-  margin-left: 13px;
+  margin-left: 0.8125rem;
 }
 .menu .choise {
-  margin-left: 13px;
-  margin-right: 15px;
-  margin-bottom: 20px;
+  margin-left: 0.8125rem;
+  margin-right: 0.9375rem;
+  margin-bottom: 1.25rem;
 }
 .menu .fa-heart {
   position: absolute;
-  top: 29px;
-  right: 15px;
+  top: 1.8125rem;
+  right: 0.9375rem;
 }
 .menu h3 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
   border-bottom: 3px solid #99E2D0;
   width: 10%;
 }
 .menu .button {
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 .menu .menu_btn {
   text-decoration: none;
 }
 
 .location {
-  gap: 30px;
+  gap: 1.875rem;
   background-color: #EAEAEA;
 }
 
 .presentation {
-  background-color: #F6F6F6;
+  background-color: #d2d2d2;
   text-align: center;
 }
 .presentation h2 {
   font-weight: 700;
-  font-size: 24px;
-  margin-left: 42px;
-  margin-right: 58px;
+  font-size: 1.5rem;
+  margin-left: 2.625rem;
+  margin-right: 3.625rem;
 }
 .presentation p {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300;
 }
 
 .fontionnement {
-  margin-top: 50px;
+  margin-top: 3.125rem;
 }
 .fontionnement h2 {
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 .fontionnement .index {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
   width: 85%;
   height: 72.38px;
   background-color: #F6F6F6;
-  border-radius: 20px;
-  margin-bottom: 10px;
-  margin-left: 30px;
+  border-radius: 1.25rem;
+  margin-bottom: 0.625rem;
+  margin-left: 1.875rem;
 }
 .fontionnement .number {
   color: white;
   background-color: #9356DC;
   border: 1px solid #9356DC;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   width: 24px;
   height: 24px;
   position: absolute;
-  margin-left: -15px;
+  margin-left: -0.9375rem;
 }
 .fontionnement .logo {
   color: #9356DC;
-  margin-left: 30px;
+  margin-left: 1.875rem;
 }
 
 .restaurant {
   background-color: #d2d2d2;
-  padding: 20px;
-  margin-top: 50px;
+  padding: 1.25rem;
+  margin-top: 3.125rem;
 }
 .restaurant h2 {
-  margin-left: 5px;
+  margin-left: 0.3125rem;
 }/*# sourceMappingURL=main.css.map */

@@ -1,8 +1,8 @@
 .card-main {
     width: 100%;
-    border-radius: 15px;
+    border-radius: torem(15);
     background-color: white;
-    margin-bottom: 20px;
+    margin-bottom: torem(20);
         
             a{
                 text-decoration: none;
@@ -13,8 +13,8 @@
         img {
        width: 100%;
        height: 200px;
-       border-top-right-radius: 15px;
-       border-top-left-radius: 15px;
+       border-top-right-radius: torem(15);
+       border-top-left-radius: torem(15);
        
         }
         .card-content{
@@ -23,8 +23,8 @@
                 
 
                 h3, p{
-                    margin: 5px;
-                    padding-left: 13px;
+                    margin: torem(5);
+                    padding-left: torem(13);
                     
                 }       
         }

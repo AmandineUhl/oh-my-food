@@ -1,20 +1,20 @@
 footer {
     @extend %flex_column;
-    background-color: $footer_color;
+    background-color: map-get($colors, footer_color);
     color: white;
 
         .enseigne{
             font-family: $font_footer;
-            font-size: 18px;
-            margin-top: 22px;
-            margin-left: 25px;
+            font-size: torem(18);
+            margin-top: torem(22);
+            margin-left: torem(25);
         }
             li{
                 display: flex;
                 align-items: center;
-                gap: 10px;
+                gap: torem(10);
                 list-style: none;
-                margin-left: -10px;
+                margin-left: torem(-10);
 
             }
         

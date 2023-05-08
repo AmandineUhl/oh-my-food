@@ -1,12 +1,14 @@
-//colors
+$colors: (
 
-$main_color: #F6F6F6 ;
-$location_color: #EAEAEA;
-$presentation_color: #d2d2d2;
-$icon_color: #9356DC;
-$footer_color: #353535;
+main_color: #F6F6F6,
+location_color: #EAEAEA,
+presentation_color: #d2d2d2,
+icon_color: #9356DC,
+footer_color: #353535,
+);
 
 //fonts
 
 $main_font: 'Roboto', sans-serif;
 $font_footer: 'shrikhand';
+

@@ -3,6 +3,10 @@
     width: 100%;
     max-width: 768px;
     box-sizing: border-box;
+    
+        img{
+            object-fit: cover;
+        }
 }
 
 body{

@@ -1,0 +1,9 @@
+//px to rem
+
+@use "sass:math";
+
+@function torem($px) {
+    @return math.div($px, 16) + rem;
+}
+
+

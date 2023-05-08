@@ -1,13 +1,12 @@
 header {
     @extend %flex_center;
-    margin-bottom: 5px;
-    margin-top: 20px;
+    margin-bottom: torem(5);
+    margin-top: torem(20);
 
         img{
             width: 40%;
         }
 }
-
 
 
 
