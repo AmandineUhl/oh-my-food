@@ -1,13 +1,13 @@
 .presentation {
     background-color: map-get($colors, presentation_color) ;
     text-align: center;
-        h2{
+        h2 {
             font-weight: 700;
             font-size: torem(24);
             margin-left: torem(42);
             margin-right: torem(58);
         }
-        p{
+        p {
             font-size: torem(18);
             font-weight: 300;
         }
@@ -22,7 +22,6 @@
 
 .fontionnement {
     margin-top: torem(50);
-
     h2 {
         margin-left: torem(20);      
     }

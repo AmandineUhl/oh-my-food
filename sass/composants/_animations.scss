@@ -1,38 +1,59 @@
-//heart
+//heart_main
 
 .card_heart::before{
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    font-family: "Font awesome 6 free";
-    -webkit-font-smoothing: antialiased;
+    @include heart;
     font-weight: 400;
-    content:"\f004";
-    position: absolute;
-    right: torem(28);
-    
 }
 
  
 .card_heart::after {
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    font-family: "Font awesome 6 free";
+    @include heart;
+    @include linearGradient;
     font-weight: 900;
-    content:"\f004";
-    position: absolute;
-    right: torem(28);
     cursor: pointer;
     opacity: 0%;
-    background: linear-gradient( #ff79da, #9356dc);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.card_heart:hover::after{
+.card_heart:hover::after {
     opacity: 1;
+    transform: scale(1.1);
+}
+
+//heart_menu
+
+.menu h2::before {
+    @include heart;
+    font-weight: 400;
+}
+
+.menu h2::after {
+    @include heart;
+    @include linearGradient;
+    font-weight: 900;
+    cursor: pointer;
+    opacity: 0%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu h2:hover::after {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+//validate_menu
+
+.validate {
+    border-top-right-radius: torem(15);
+    border-bottom-right-radius: torem(15);
+    margin-right: -3rem;
+    width: 3rem;
+    
+    background-color:red;
+    
+
 }

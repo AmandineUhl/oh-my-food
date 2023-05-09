@@ -1,0 +1,15 @@
+@mixin heart {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-family: "Font awesome 6 free";
+    -webkit-font-smoothing: antialiased;
+    content:"\f004";
+    position: absolute;
+    right: torem(28);
+}
+
+@mixin linearGradient {
+    background: linear-gradient( #ff79da, #9356dc);
+}
