@@ -3,19 +3,23 @@ footer {
     background-color: map-get($colors, footer_color);
     color: white;
 
-        .enseigne{
+        .enseigne {
             font-family: $font_footer;
             font-size: torem(18);
             margin-top: torem(22);
             margin-left: torem(25);
         }
-            li{
+        li {
                 display: flex;
                 align-items: center;
                 gap: torem(10);
                 list-style: none;
                 margin-left: torem(-10);
+                
+                p{
+                    margin: torem(5);
+                }
 
-            }
+        }
         
 }

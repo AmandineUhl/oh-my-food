@@ -1,3 +1,8 @@
+.explored:hover, button:hover {
+    @include anim_btn;
+}
+
+
 //heart_main
 
 .card_heart::before{
@@ -52,8 +57,11 @@
     border-bottom-right-radius: torem(15);
     margin-right: -3rem;
     width: 3rem;
+    background-color: map-get($colors, animation_color);
     
-    background-color:red;
-    
+}
 
+.content:hover .validate {
+    margin-right: 0;
+    transition:all 1s ease-in-out;
 }

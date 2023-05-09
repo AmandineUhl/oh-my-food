@@ -37,26 +37,40 @@
     box-shadow: 0px 4px 15px rgba(0,0,0,0.1); 
     box-sizing: border-box;
     margin-bottom: torem(20);
-    overflow: hidden;
+    @include etc;
+    
 }
     
 .content {
-    
     display: flex;
-        
-        h4,p{
-            margin: 5px;
+        .content_txt{
+            @include etc;
+            margin: 10px;
         }
-        
+        h4,p{
+            @include etc;
+            margin: 2px;
+        }
         .price{
             display: flex;
             align-items: flex-end;
-            padding: 5px;
+            padding: 10px;
+            padding-left: 0;
             margin-left: auto;
             font-weight: 900;
-            
         }
-    
+}
+
+.validate{
+    @extend %flex_center;
+        i{
+            background-color: white;
+            color: map-get($colors, animation_color);
+            border-radius: 50%;
+            width:torem(20);
+            height: torem(20);
+            @extend %flex_center;
+        }
 }
 
 
