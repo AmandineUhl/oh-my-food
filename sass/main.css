@@ -1,4 +1,4 @@
-.fontionnement .number, .location, .menu .menu_btn, header {
+.index_number, .presentation_loc, .menu .menu_btn, header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,67 +37,91 @@ body {
   margin-bottom: 3.125rem;
 }
 
-.card-main {
+.card {
   width: 100%;
   border-radius: 0.9375rem;
   background-color: white;
   margin-bottom: 1.25rem;
 }
-.card-main a {
+.card a {
   text-decoration: none;
   color: black;
 }
-.card-main img {
+.card img {
   width: 100%;
   height: 200px;
   border-top-right-radius: 0.9375rem;
   border-top-left-radius: 0.9375rem;
 }
-.card-main .card-content {
+
+.card_content {
   display: flex;
   justify-content: space-between;
 }
-.card-main .card-content h3, .card-main .card-content p {
+.card_content h3, .card_content p {
   margin: 0.3125rem;
   padding-left: 0.8125rem;
 }
 
-.card_menu {
+.menu_card {
   width: 100%;
   height: 69px;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  padding: 4px;
-  gap: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 15px 20px 0 10px;
   margin-bottom: 10px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  box-sizing: border-box;
 }
-.card_menu .card_content h4, .card_menu .card_content p {
+
+.content h4, .content p {
   margin: 0;
 }
-.card_menu .card_content .title {
+.content_title {
   display: flex;
   justify-content: space-between;
 }
-.card_menu .card_content .subtitle {
+.content_subtitle {
   font-size: 15px;
   font-weight: 300;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
-.card_menu .card_content .card_validate {
-  background-color: #99e2d0;
-  width: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition-duration: 5s;
+
+.card_heart::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  font-family: "Font awesome 6 free";
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  content: "\f004";
+  position: absolute;
+  right: 1.75rem;
+}
+
+.card_heart::after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  font-family: "Font awesome 6 free";
+  font-weight: 900;
+  content: "\f004";
+  position: absolute;
+  right: 1.75rem;
+  cursor: pointer;
+  opacity: 0%;
+  background: linear-gradient(#ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card_heart:hover::after {
+  opacity: 1;
 }
 
 header {
@@ -176,11 +200,6 @@ header .arrow {
   text-decoration: none;
 }
 
-.location {
-  gap: 1.875rem;
-  background-color: #EAEAEA;
-}
-
 .presentation {
   background-color: #d2d2d2;
   text-align: center;
@@ -195,6 +214,10 @@ header .arrow {
   font-size: 1.125rem;
   font-weight: 300;
 }
+.presentation_loc {
+  gap: 1.875rem;
+  background-color: #EAEAEA;
+}
 
 .fontionnement {
   margin-top: 3.125rem;
@@ -202,7 +225,8 @@ header .arrow {
 .fontionnement h2 {
   margin-left: 1.25rem;
 }
-.fontionnement .index {
+
+.index {
   display: flex;
   align-items: center;
   gap: 1.25rem;
@@ -213,7 +237,7 @@ header .arrow {
   margin-bottom: 0.625rem;
   margin-left: 1.875rem;
 }
-.fontionnement .number {
+.index_number {
   color: white;
   background-color: #9356DC;
   border: 1px solid #9356DC;
@@ -223,7 +247,7 @@ header .arrow {
   position: absolute;
   margin-left: -0.9375rem;
 }
-.fontionnement .logo {
+.index_logo {
   color: #9356DC;
   margin-left: 1.875rem;
 }
