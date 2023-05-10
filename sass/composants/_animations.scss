@@ -1,7 +1,28 @@
+//badge new
+
+.link {
+    position: relative;
+}
+
+.new::before {
+    position: absolute;
+    content: "Nouveau";
+    right: 10px;
+    margin-top: 10px;
+    width: 75px;
+    height: 20px;
+    border-radius: 2px;
+    background-color: map-get($colors, animation_color);
+    color: green;
+    font-weight: 900;
+    padding: 5px;
+    @extend %flex_center;
+}
+//button
+
 .explored:hover, button:hover {
     @include anim_btn;
 }
-
 
 //heart_main
 
