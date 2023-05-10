@@ -195,6 +195,11 @@ body {
   right: 1.75rem;
   font-weight: 400;
 }
+@media screen and (min-width: 769px) {
+  .menu h2::before {
+    margin-right: 18.75rem;
+  }
+}
 
 .menu h2::after {
   display: inline-block;
@@ -214,6 +219,11 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media screen and (min-width: 769px) {
+  .menu h2::after {
+    margin-right: 18.75rem;
+  }
 }
 
 .menu h2:hover::after {
@@ -328,6 +338,12 @@ header .arrow {
   font-family: "shrikhand";
   margin-left: 0;
   background-color: #F6F6F6;
+}
+@media screen and (min-width: 769px) {
+  .menu h2 {
+    display: flex;
+    justify-content: center;
+  }
 }
 .menu .choise {
   margin-left: 0.8125rem;

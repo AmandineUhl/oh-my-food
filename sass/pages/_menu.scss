@@ -33,6 +33,10 @@ header {
             font-family: $font_footer;
             margin-left: 0;
             background-color: map-get($colors, main_color);
+            @include desktop_only {
+                display: flex;
+                justify-content: center;
+            }
         }
         .choise {
             margin-left: torem(13);
