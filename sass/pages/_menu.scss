@@ -14,29 +14,39 @@ header {
     height: 275px;
     }
 }
-
 .menu {
-    position: relative;
-    margin-top: -25%;
+    margin-top: torem(-70);
     width: 100%;
     background-color: map-get($colors, main_color);
-    border-top-left-radius: torem(20);
-    border-top-right-radius: torem(20);
     @extend %flex_column;
+    @include desktop_only {
+        margin-top: torem(-50);
+        margin-right: torem(130);
+        margin-left: torem(100);
+        width: 80%;
+    }
         h2 {
+            border-top-left-radius: torem(20);
+            border-top-right-radius: torem(20);
+            padding-top: torem(15);
+            padding-left: torem(15);
             font-family: $font_footer;
-            margin-left: torem(13); 
+            margin-left: 0;
+            background-color: map-get($colors, main_color);
         }
-        .choise{
-            margin-left: torem(5);
-            margin-right: torem(5);
+        .choise {
+            margin-left: torem(13);
+            margin-right: torem(13);
             margin-bottom: torem(20);
         }
-        h3{
+        h3 {
             font-size: torem(16);
             font-weight: 300;
             border-bottom: 3px solid #99E2D0;
             width: 10%;
+            @include desktop_only{
+                width: 5%;
+            }
         }
         .menu_btn{
             text-decoration: none;

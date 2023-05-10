@@ -12,7 +12,7 @@
     -webkit-font-smoothing: antialiased;
     content:"\f004";
     position: absolute;
-    margin-top: 5px;
+    margin-top: torem(5);
     right: torem(28);
 }
 
@@ -24,4 +24,15 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+@mixin desktop_only {
+    @media screen and (min-width: 769px){
+    @content;
+    }
+}
+
+@mixin padding_desktop {
+        padding-left: torem(100);
+        padding-right: torem(100);
 }

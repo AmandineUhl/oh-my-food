@@ -18,12 +18,18 @@
         }
 }
 
-
-
 .fontionnement {
     margin-top: torem(50);
     h2 {
         margin-left: torem(20);      
+    }
+    @include desktop_only {
+        @include padding_desktop
+    }
+    .fonctionnement_index {
+        @include desktop_only {
+        display: flex;
+        }
     }
 }
 
@@ -55,12 +61,26 @@
     }
 
 }
-.restaurant{
+.restaurant {
     background-color: map-get($colors, presentation_color);
     padding: torem(20);
     margin-top: torem(50);
-        h2{
+    @include desktop_only {
+        @include padding_desktop;
+    }
+        h2 {
             margin-left: torem(5);
+            @include desktop_only {
+                margin-left: torem(30);
+            }
         }
+}
 
+.all_card {
+    @include desktop_only {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
 }

@@ -5,6 +5,9 @@
     border-radius: torem(15);
     background-color: white;
     margin-bottom: torem(20);
+    @include desktop_only {
+        width: 45%;
+    }
             a {
                 text-decoration: none;
                 color: black;
@@ -20,7 +23,7 @@
 .card_content {
     display: flex;
     justify-content: space-between;
-            h3, p{
+            h3, p {
                 margin: torem(5);
                 padding-left: torem(13);   
                 }       

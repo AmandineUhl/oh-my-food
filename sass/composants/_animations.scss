@@ -7,17 +7,18 @@
 .new::before {
     position: absolute;
     content: "Nouveau";
-    right: 10px;
-    margin-top: 10px;
+    right: torem(10);
+    margin-top: torem(10);
     width: 75px;
     height: 20px;
-    border-radius: 2px;
+    border-radius: torem(2);
     background-color: map-get($colors, animation_color);
     color: green;
     font-weight: 900;
-    padding: 5px;
+    padding: torem(5);
     @extend %flex_center;
 }
+
 //button
 
 .explored:hover, button:hover {
@@ -26,12 +27,11 @@
 
 //heart_main
 
-.card_heart::before{
+.card_heart::before {
     @include heart;
     font-weight: 400;
 }
 
- 
 .card_heart::after {
     @include heart;
     @include linearGradient;
@@ -50,6 +50,9 @@
 
 //heart_menu
 
+.menu h2 {
+    position: relative;
+}
 .menu h2::before {
     @include heart;
     font-weight: 400;

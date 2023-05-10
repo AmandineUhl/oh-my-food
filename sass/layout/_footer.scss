@@ -2,24 +2,42 @@ footer {
     @extend %flex_column;
     background-color: map-get($colors, footer_color);
     color: white;
+    @include desktop_only {
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        justify-content: flex-start;
+        padding-top: 50px;
+
+    }
 
         .enseigne {
             font-family: $font_footer;
             font-size: torem(18);
             margin-top: torem(22);
             margin-left: torem(25);
+            @include desktop_only {
+                margin-bottom: torem(30);
+                margin-right: torem(30);
+                padding-left: torem(30);
+            }
         }
-        li {
+        ul {
+            @include desktop_only {
                 display: flex;
-                align-items: center;
-                gap: torem(10);
-                list-style: none;
-                margin-left: torem(-10);
-                
-                p{
-                    margin: torem(5);
-                }
-
+                flex-direction: row;
+                gap: torem(20);
+            }
         }
         
+        li {
+            display: flex;
+            align-items: center;
+            gap: torem(10);
+            list-style: none;
+            margin-left: torem(-10);
+                
+            p {
+                margin: torem(5);
+            }
+        }
 }

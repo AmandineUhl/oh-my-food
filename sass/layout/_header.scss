@@ -2,9 +2,14 @@ header {
     @extend %flex_center;
     margin-bottom: torem(5);
     margin-top: torem(20);
-
-        img{
+    @include desktop_only {
+        margin-bottom: torem(25);
+    }
+        img {
             width: 40%;
+            @include desktop_only{
+                width: 20%;
+            }
         }
 }
 

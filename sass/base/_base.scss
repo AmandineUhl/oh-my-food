@@ -3,13 +3,14 @@
     width: 100%;
     max-width: 768px;
     box-sizing: border-box;
-    
-        img{
+    @include desktop_only{
+        max-width: 1440px;
+    }
+        img {
             object-fit: cover;
         }
 }
-
-body{
+body {
     margin:0;
 }
 
