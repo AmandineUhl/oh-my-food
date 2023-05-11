@@ -1,3 +1,23 @@
+//loader
+
+.loader{
+    position: fixed;
+    z-index: 1;
+    inset: 0;
+    height: 100vh;
+    background-color:#fff;
+    opacity: 0.9;
+    animation: disappear 3s forwards 3s;
+    @extend %flex_center;
+        i {
+        animation: loader_cube 1s linear infinite;
+        color: darkblue;
+        }
+    
+}
+
+
+
 //badge new
 
 .link {
@@ -94,4 +114,15 @@
 .content:hover .validate {
     margin-right: 0;
     transition:all 1s ease-in-out;
+}
+
+//card appear
+
+.menu_card {
+    animation: appear 1s ease-in-out  ;
+    @for $i from 1 through 4 {
+        &:nth-child(#{$i}) {
+            animation-delay: 200ms * $i;
+        }
+    }
 }

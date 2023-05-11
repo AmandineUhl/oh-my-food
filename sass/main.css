@@ -1,4 +1,28 @@
-.index_number, .presentation_loc, .menu .menu_btn, header, .new::before, .validate i, .validate, body {
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loader_cube {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.index_number, .presentation_loc, .menu .menu_btn, header, .new::before, .loader, .validate i, .validate {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,6 +138,20 @@ body {
   border-radius: 50%;
   width: 1.25rem;
   height: 1.25rem;
+}
+
+.loader {
+  position: fixed;
+  z-index: 1;
+  inset: 0;
+  height: 100vh;
+  background-color: #fff;
+  opacity: 0.9;
+  animation: disappear 3s forwards 3s;
+}
+.loader i {
+  animation: loader_cube 1s linear infinite;
+  color: darkblue;
 }
 
 .link {
@@ -244,6 +282,22 @@ body {
   transition: all 1s ease-in-out;
 }
 
+.menu_card {
+  animation: appear 1s ease-in-out;
+}
+.menu_card:nth-child(1) {
+  animation-delay: 200ms;
+}
+.menu_card:nth-child(2) {
+  animation-delay: 400ms;
+}
+.menu_card:nth-child(3) {
+  animation-delay: 600ms;
+}
+.menu_card:nth-child(4) {
+  animation-delay: 800ms;
+}
+
 header {
   margin-bottom: 0.3125rem;
   margin-top: 1.25rem;
@@ -304,6 +358,11 @@ footer li {
 footer li p {
   margin: 0.3125rem;
 }
+footer li a {
+  margin: 0.3125rem;
+  text-decoration: none;
+  color: white;
+}
 
 header .arrow {
   color: black;
@@ -351,9 +410,14 @@ header .arrow {
   }
 }
 .menu .choise {
+  margin-bottom: 1.25rem;
   margin-left: 0.8125rem;
   margin-right: 0.8125rem;
-  margin-bottom: 1.25rem;
+}
+@media screen and (min-width: 769px) {
+  .menu .choise {
+    width: 60%;
+  }
 }
 .menu h3 {
   font-size: 1rem;
@@ -369,6 +433,14 @@ header .arrow {
 .menu .menu_btn {
   text-decoration: none;
   margin-top: 1.875rem;
+}
+
+@media screen and (min-width: 769px) {
+  .all_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .presentation {
@@ -412,7 +484,7 @@ header .arrow {
   display: flex;
   align-items: center;
   gap: 1.25rem;
-  width: 85%;
+  width: 93%;
   height: 72.38px;
   background-color: #F6F6F6;
   border-radius: 1.25rem;

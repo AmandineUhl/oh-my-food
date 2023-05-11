@@ -42,9 +42,12 @@ header {
             }
         }
         .choise {
+            margin-bottom: torem(20);
             margin-left: torem(13);
             margin-right: torem(13);
-            margin-bottom: torem(20);
+            @include desktop_only {
+                width: 60%;
+            }
         }
         h3 {
             font-size: torem(16);
@@ -61,4 +64,11 @@ header {
             margin-top: torem(30);
         }
 
+}
+.all_card{
+    @include desktop_only {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
