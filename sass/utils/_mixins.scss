@@ -27,7 +27,7 @@
 }
 
 @mixin desktop_only {
-    @media screen and (min-width: 769px){
+    @media screen and (min-width: map-get($breakpoints,desktop)){
     @content;
     }
 }

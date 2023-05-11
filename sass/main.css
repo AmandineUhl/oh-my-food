@@ -1,4 +1,4 @@
-.index_number, .presentation_loc, .menu .menu_btn, header, .new::before, .validate i, .validate {
+.index_number, .presentation_loc, .menu .menu_btn, header, .new::before, .validate i, .validate, body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -310,6 +310,11 @@ header .arrow {
   text-decoration: none;
   position: absolute;
   left: 5%;
+}
+@media screen and (min-width: 769px) {
+  header .arrow {
+    left: 10%;
+  }
 }
 
 .background img {

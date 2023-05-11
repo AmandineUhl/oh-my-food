@@ -5,6 +5,9 @@ header {
         text-decoration: none; 
         position: absolute;
         left: 5%; 
+        @include desktop_only{
+            left: 10%;
+        }
     }
 }
 
