@@ -9,7 +9,6 @@ footer {
         padding-top: 50px;
 
     }
-
         .enseigne {
             font-family: $font_footer;
             font-size: torem(18);
@@ -21,6 +20,7 @@ footer {
                 padding-left: torem(30);
             }
         }
+
         ul {
             @include desktop_only {
                 display: flex;

@@ -37,6 +37,7 @@ header {
             margin-left: 0;
             background-color: map-get($colors, main_color);
             @include desktop_only {
+                padding-top: torem(40);
                 display: flex;
                 justify-content: center;
             }
@@ -54,7 +55,7 @@ header {
             font-weight: 300;
             border-bottom: 3px solid #99E2D0;
             width: 10%;
-            @include desktop_only{
+            @include desktop_only {
                 width: 5%;
             }
         }

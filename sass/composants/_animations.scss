@@ -1,17 +1,19 @@
 //loader
 
-.loader{
+.loader {
     position: fixed;
     z-index: 1;
     inset: 0;
-    height: 100vh;
-    background-color:#fff;
+    height: 100%;
+    background-color:#ffffff;
     opacity: 0.9;
-    animation: disappear 3s forwards 3s;
+    animation: disappear 2s forwards 0.5s linear;
+    transform-origin: bottom;
+    font-size: 30px;
     @extend %flex_center;
         i {
         animation: loader_cube 1s linear infinite;
-        color: darkblue;
+        color: map-get($colors, animation_color);
         }
     
 }
@@ -64,8 +66,8 @@
 }
 
 .card_heart:hover::after {
-    opacity: 1;
-    transform: scale(1.1);
+    animation: heart_full 0.5s linear forwards;
+    transform: scale(1.2);
 }
 
 //heart_menu
@@ -77,7 +79,7 @@
     @include heart;
     font-weight: 400;
     @include desktop_only{
-        margin-right: torem(300);
+        margin-right: torem(310);
     }
 }
 
@@ -90,13 +92,13 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    @include desktop_only{
-        margin-right: torem(300);
+    @include desktop_only {
+        margin-right: torem(310);
     }
 }
 
 .menu h2:hover::after {
-    opacity: 1;
+    animation: heart_full 0.5s linear forwards;
     transform: scale(1.1);
 }
 

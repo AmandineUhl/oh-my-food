@@ -27,12 +27,12 @@
 }
 
 @mixin desktop_only {
-    @media screen and (min-width: map-get($breakpoints,desktop)){
-    @content;
+    @media screen and (min-width: map-get($breakpoints, desktop)){
+        @content;
     }
 }
 
 @mixin padding_desktop {
-        padding-left: torem(100);
-        padding-right: torem(100);
+    padding-left: torem(100);
+    padding-right: torem(100);
 }

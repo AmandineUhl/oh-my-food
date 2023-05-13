@@ -2,12 +2,12 @@
 
 @use "sass:math";
 
-//px to rem 
 
 @function torem($px) {
     @return math.div($px, 16) + rem;
 }
 
+//loader
 
 @keyframes appear {
     0% {
@@ -16,17 +16,18 @@
     100% {
         transform: scale(1);
     }
-
 }
 
 @keyframes disappear {
     0% {
-        opacity: 1;
+        transform: scale(1);
     }
-    100%{
-        opacity: 0;
+    100% {
+        transform: scale(0);
     }
 }
+
+//loader 
 
 @keyframes loader_cube {
     0% {
@@ -35,5 +36,16 @@
     
     100% {
         transform: rotate(360deg);
+    }
+}
+
+//heart
+
+@keyframes heart_full {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
