@@ -8,10 +8,10 @@
 }
 @keyframes disappear {
   0% {
-    opacity: 1;
+    transform: scale(1);
   }
   100% {
-    opacity: 0;
+    transform: scale(0);
   }
 }
 @keyframes loader_cube {
@@ -20,6 +20,14 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes heart_full {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .index_number, .presentation_loc, .menu .menu_btn, header, .new::before, .loader, .validate i, .validate {
@@ -52,6 +60,8 @@
 
 body {
   margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .explored, .button {
@@ -144,14 +154,16 @@ body {
   position: fixed;
   z-index: 1;
   inset: 0;
-  height: 100vh;
-  background-color: #fff;
+  height: 100%;
+  background-color: #ffffff;
   opacity: 0.9;
-  animation: disappear 3s forwards 3s;
+  animation: disappear 2s forwards 0.5s linear;
+  transform-origin: bottom;
+  font-size: 30px;
 }
 .loader i {
   animation: loader_cube 1s linear infinite;
-  color: darkblue;
+  color: #99E2D0;
 }
 
 .link {
@@ -212,8 +224,8 @@ body {
 }
 
 .card_heart:hover::after {
-  opacity: 1;
-  transform: scale(1.1);
+  animation: heart_full 0.5s linear forwards;
+  transform: scale(1.2);
 }
 
 .menu h2 {
@@ -235,7 +247,7 @@ body {
 }
 @media screen and (min-width: 769px) {
   .menu h2::before {
-    margin-right: 18.75rem;
+    margin-right: 19.375rem;
   }
 }
 
@@ -260,12 +272,12 @@ body {
 }
 @media screen and (min-width: 769px) {
   .menu h2::after {
-    margin-right: 18.75rem;
+    margin-right: 19.375rem;
   }
 }
 
 .menu h2:hover::after {
-  opacity: 1;
+  animation: heart_full 0.5s linear forwards;
   transform: scale(1.1);
 }
 
@@ -405,6 +417,7 @@ header .arrow {
 }
 @media screen and (min-width: 769px) {
   .menu h2 {
+    padding-top: 2.5rem;
     display: flex;
     justify-content: center;
   }
