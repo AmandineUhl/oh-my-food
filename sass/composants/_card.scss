@@ -46,27 +46,31 @@
     
 .content {
     display: flex;
-        .content_txt{
+        .content_txt {
             @include etc;
             margin: 10px;
         }
-        h4,p{
+        h4,p {
             @include etc;
             margin: 2px;
         }
-        .price{
+        .price {
             display: flex;
             align-items: flex-end;
             padding: 10px;
             padding-left: 0;
             margin-left: auto;
-            font-weight: 900;
+            font-weight: bold;
+            gap: torem(5);
+            i {
+                margin-bottom: torem(2);
+            }
         }
 }
 
 .validate {
     @extend %flex_center;
-        i{
+        i {
             background-color: white;
             color: map-get($colors, animation_color);
             border-radius: 50%;

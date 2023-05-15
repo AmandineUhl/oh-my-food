@@ -139,7 +139,11 @@ body {
   padding: 10px;
   padding-left: 0;
   margin-left: auto;
-  font-weight: 900;
+  font-weight: bold;
+  gap: 0.3125rem;
+}
+.content .price i {
+  margin-bottom: 0.125rem;
 }
 
 .validate i {
@@ -381,10 +385,12 @@ header .arrow {
   text-decoration: none;
   position: absolute;
   left: 5%;
+  top: 1.875rem;
 }
 @media screen and (min-width: 769px) {
   header .arrow {
     left: 10%;
+    top: 2.1875rem;
   }
 }
 

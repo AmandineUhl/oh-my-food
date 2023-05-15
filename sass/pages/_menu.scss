@@ -4,9 +4,11 @@ header {
         color:black;
         text-decoration: none; 
         position: absolute;
-        left: 5%; 
+        left: 5%;
+        top:torem(30); 
         @include desktop_only{
             left: 10%;
+            top: torem(35);
         }
     }
 }
