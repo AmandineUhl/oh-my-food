@@ -47,6 +47,12 @@
     @include anim_btn;
 }
 
+//icon color
+
+.index_logo:hover{
+    color:map-get($colors, icon_color)
+}
+
 //heart_main
 
 .card_heart::before {
